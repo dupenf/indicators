@@ -105,11 +105,10 @@ function ma<T>(
             result = sma(nums, period);
             break;
     }
-
     return result;
-
     // return result.map(v => ({ value: v }));
 }
+
 
 function ma_calc(frameData: { close: number[], time: string[] }, period: number, type: MaType = 'sma') {
     const options: MaOptions = {period,type};
